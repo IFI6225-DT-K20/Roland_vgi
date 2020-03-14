@@ -7,7 +7,8 @@ $(document).ready(function() {
         items: 1,
         autoplay: true,
         loop:true,
-        animateOut: 'fadeOut' 
+        animateOut: 'fadeOut',
+        
     });
    
   });

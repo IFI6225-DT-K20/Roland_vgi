@@ -43,7 +43,6 @@ ul{
 #login{
     background: #f4f4f4;
     border-bottom: 1px solid rgba(255,255,255,0.9);
-    display: inline-block;
    /* padding-left: 200px;*/
 }
 #login .nav-pills{
@@ -67,7 +66,6 @@ ul{
     color: black;
     padding: 0 12px;
     font-size: 12px;
-    line-height: 30px;
     text-decoration: none;
     display: block;
     border: none;
@@ -80,6 +78,11 @@ ul{
     border-top: 1px solid #c2c2c5;
     border-bottom: 1px solid #c2c2c5;
 
+}
+#login .nav-pills li:last-child{
+    border-right: 1px solid #c2c2c5;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
 }     
 #login form button{
     color: #fff;
@@ -95,9 +98,15 @@ ul{
 #login form input{
     font-size: 12px;
     font-weight: 500;
+    width: 180px;
+    height: 36px;
+    
 }
+#login form{
+    position: relative;
+}
+
 #menu{
-    padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
     background: #f2f2f3;
@@ -171,4 +180,50 @@ ul{
     color: #00000f;
     text-decoration:none ;
     display: block;
+}
+.container .podcast{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    line-height: 25px;
+
+}
+.container .podcast a{
+    display: block;
+    margin-bottom: 5px;   
+}
+.container .podcast:before{
+    content:"";
+    background-image: url("assets/play-video.svg");
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: black;  
+}
+a.readextra {
+    text-decoration: none;
+}
+a.readextra:hover {
+    text-decoration: none;
+    color: #909097;
+}
+.spacer{
+    margin-top: 80px;
+}
+.footer{
+    background-color: #f8f8f8;
+    position:absolute;
+    font-size: 12px;
 }
