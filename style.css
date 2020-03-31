@@ -8,6 +8,11 @@ body {
     font-weight: 400;
     letter-spacing: 0;
     color: #00000f;
+    background-image: url("assets/chat.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;/*vasakult 1050 ülevalt 100*/
+    z-index: 2147483647;
+    background-attachment: fixed;
 }
 .container1{
     font-size: 11px;
@@ -187,8 +192,6 @@ ul{
     display: block;
     margin-bottom: 5px;
     padding-left: 40px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
     position: relative;
     line-height: 25px;
@@ -223,7 +226,47 @@ a.readextra:hover {
     margin-top: 80px;
 }
 .footer{
+    position: absolute; 
     background-color: #f8f8f8;
-    position:absolute;
     font-size: 12px;
+    left:0;
+    right:0;
+}
+.footer .example .rowy{
+    margin-left:-35px;
+}
+.footer .example li a{
+   text-decoration: none;
+   color: black;
+   font-weight: 400;
+}
+.footer h3{
+    text-decoration: none;
+    color: #909097;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 2px;
+    margin-top: 50px;
+ }
+ .footer .social{
+     margin-right: 20px;
+     display: flex;
+ }
+.footer .app{ 
+    position: absolute;
+    left:65%;  
+}
+.footer .copyright p{ 
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 18px;
+    color:#444b57;
+}
+.footer .copyright a{ 
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 18px;
+    text-decoration: underline;
+    color:#444b57;
 }
