@@ -10,9 +10,9 @@ body {
     color: #00000f;
     background-image: url("assets/chat.svg");
     background-repeat: no-repeat;
-    background-position: bottom right;/*vasakult 1050 ülevalt 100*/
-    z-index: 2147483647;
+    background-position: 99% 99% ;
     background-attachment: fixed;
+    
 }
 .container1{
     font-size: 11px;
@@ -27,7 +27,7 @@ ul{
 }
 .lside li{
     text-align: left;
-    position: 20px;
+    margin-left:-60px;
 }
 
 .rside li a{
@@ -53,7 +53,7 @@ ul{
 #login .nav-pills{
     position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left:450px;
     text-align: center;
 }
 
@@ -69,12 +69,10 @@ ul{
     font-size: 12px;
     line-height: 30px;
     color: black;
-    padding: 0 12px;
+    padding: 0 12px; /*mmaybe*/
     font-size: 12px;
     text-decoration: none;
-    display: block;
-    border: none;
-    border-radius: 0;   
+    display: block;  
 }
 #login .nav-pills li {
     display: inline-block;
@@ -88,7 +86,12 @@ ul{
     border-right: 1px solid #c2c2c5;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px
-}     
+}
+#login .nav-pills li:first-child{
+    border-left: 1px solid #c2c2c5;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
 #login form button{
     color: #fff;
     background-color: #6b6666;
@@ -104,7 +107,7 @@ ul{
     font-size: 12px;
     font-weight: 500;
     width: 180px;
-    height: 36px;
+    height: 40px;
     
 }
 #login form{
@@ -112,12 +115,7 @@ ul{
 }
 
 #menu{
-    padding-right: 0;
-    margin-bottom: 0;
     background: #f2f2f3;
-    border: none;
-    border-radius: 0;
-    margin-top: 5px;
     text-transform: uppercase;
     font-size: small;
     font-weight: 500;
@@ -131,27 +129,20 @@ ul{
     cursor: pointer;
   }
   .box{
-      width: 750px;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
+      width: 778px;
+      height:5px;
     }
-    #menu .dropdown-menu .box .menu-table{
-        background-size: 100%;
-
+    .dropdown{
+        position: static;
     }
 .dropdown-menu{
+    
+    padding:0;
+    margin: 4px;
+    width: 650px;
     position: absolute;
-    top: 100%;
-    z-index: 1000;
-    float: left;
-    min-width: 160px;
     font-size: 14px;
-    text-align: left;
-    list-style: none;
     background-color: #fff;
-    border: 1px solid #ccc;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 4px;
 }
@@ -168,6 +159,7 @@ ul{
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
+ 
 }
 .cmenu .dropdown .dropdown-menu .box .menu-table table td{
     padding: 0 10px;
@@ -208,8 +200,7 @@ ul{
     width: 24px;
     position: absolute;
     background-size: cover;
-    left: 0;
-    
+    left: 0;  
 }
 a{
     text-decoration: none;
@@ -226,7 +217,6 @@ a.readextra:hover {
     margin-top: 80px;
 }
 .footer{
-    position: absolute; 
     background-color: #f8f8f8;
     font-size: 12px;
     left:0;
@@ -252,7 +242,12 @@ a.readextra:hover {
  .footer .social{
      margin-right: 20px;
      display: flex;
+    
  }
+ .footer .social2{
+    margin-left: 17px;
+    margin-right: 20px;  
+}
 .footer .app{ 
     position: absolute;
     left:65%;  
@@ -269,4 +264,49 @@ a.readextra:hover {
     line-height: 18px;
     text-decoration: underline;
     color:#444b57;
+}
+.owl-carousel .banner {
+    position:relative;
+    top: -350px;
+    left: 140px;
+    text-decoration: none;
+    color:black;
+}
+.owl-carousel .banner h2{
+    position:relative;
+    font-size:50px;
+    margin-bottom: 15px;
+}
+.owl-carousel .item .banner2 a{
+    position: relative;
+    top:-220px;
+    left: -320px;
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+}
+.owl-carousel .banner3 {
+    position:relative;
+    top: -545px;
+    left: 40%;
+    color:white;
+    text-decoration: none;
+}
+.owl-carousel .banner3 .bannerg{
+    position: relative;
+    top:10;
+    left: -140px;
+    color:#a7d6cb;
+}
+.owl-carousel .banner3 .bannerp{
+    position: relative;
+    top: 0px;
+    left: 30px;
+    color:#facab2;
+}
+.owl-carousel .banner3 h2{
+    position:relative;
+    font-size: 70px;
+    font-weight:700;
 }
