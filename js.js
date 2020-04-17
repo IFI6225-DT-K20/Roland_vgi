@@ -1,5 +1,5 @@
-$(document).ready(function() {
- 
+
+$(document).ready(function() {  
     $("#owl-demo").owlCarousel({
    
         slideSpeed : 300,
@@ -10,5 +10,4 @@ $(document).ready(function() {
         animateOut: 'fadeOut',
         
     });
-   
   });
