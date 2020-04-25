@@ -17,62 +17,54 @@ body {
 .triangle{
     width: 0px;
 	height: 0px;
-	border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid #f2f2f3;
-    margin-left:920px;
+	border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 21px solid #f2f2f3;
+    margin-left: 78%;
     margin-top: -8px;
     margin-bottom:-7px;
 }
-.container{
-    font-size: 11px;
-    text-align: center;
-    margin-bottom: 6px;
-}
-ul{
+
+ul {
     list-style-type:none;
 }
-.lside li a{
-    color: black;
-    text-decoration: none;
-}
-.lside li{
-    text-align: left;
-    margin-left:-23px;
-    margin-bottom: -5.5px;
-}
-.lside li:first-child{
-    margin-top: 17.5px;
+
+.lside {
+    font-size: 11px;
+    margin-top: 7%;
+    margin-left: -10%;
+    margin-bottom: 1%;
+    line-height: 20px;
 }
 
-.rside li a{
-  text-decoration: none;
-  float: right;
+.rside li a {
   margin-right: 3px;
 }
-.rside{
-    left:67.5%;
-    top: 2.9%;
+
+.rside {
+    left:64%;
+    top: 3.1%;
     font-size: 11px;
     position: absolute;
     font-weight: 530;
 }
-.img{
-    margin-left: -140px;
+
+.img {
+    margin-left: 30%;
     margin-top: 35px;
-    float: center;
     align-self: flex-start;
 }
-#login{
+
+#login {
     background: #f4f4f4;
     border-bottom: 1px solid rgba(255,255,255,0.9);
    
 }
-#login .nav{
+
+#login .nav {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left:410px;
     text-align: center;
     margin-right: 2px;
 }
@@ -190,6 +182,9 @@ ul{
     background-color: #f4f4f4;
     border-radius: 5px;
     border: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
   }
   .cmenu .dropdown .dropdown-menu .box .menu-table table td h3{
     margin-top: 0;
@@ -210,13 +205,14 @@ ul{
 
 .cmenu .dropdown .dropdown-menu .box .menu-table table td li a {
     text-transform: none;
-    padding: 0;
-    line-height: 18px;
-    line-break: inherit;
-    color: #00000f;
     text-decoration:none ;
+    color:black;
     display: block;
 }
+.container .mid {
+    padding-left: 100px;
+}
+
 .container .podcast{
     text-decoration: none;
     color: black;
@@ -228,11 +224,13 @@ ul{
     line-height: 25px;
 
 }
-.container .podcast a{
+
+.container .podcast a {
     display: block;
     margin-bottom: 5px;   
 }
-.container .podcast:before{
+
+.container .podcast:before {
     content:"";
     background-image: url("assets/play-video.svg");
     height: 24px;
@@ -241,111 +239,134 @@ ul{
     background-size: cover;
     left: 0;  
 }
-a{
+
+a {
     text-decoration: none;
     color: black;  
 }
+
 a.readextra {
     text-decoration: none;
 }
+
 a.readextra:hover {
     text-decoration: none;
     color: #909097;
 }
-.spacer{
+
+.spacer {
     margin-top: 80px;
 }
-.footer{
+
+.footer {
     background-color: #f8f8f8;
-    font-size: 12px;
-    left:0;
-    right:0;
+    font-size: 14px;
+    padding-left: 165px;
+
 }
+
 .footer .example .rowy{
     margin-left:-35px;
 }
+
 .footer .example li a{
    text-decoration: none;
    color: black;
    font-weight: 400;
 }
+
 .footer h3{
-    text-decoration: none;
     color: #909097;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 500;
-    margin-left: 2px;
+    font-weight: bold;
+    margin-left: 5px;
     margin-top: 50px;
  }
+
  .footer .social{
      margin-right: 20px;
      display: flex;
     
  }
+
  .footer .social2{
     margin-left: 17px;
     margin-right: 20px;  
 }
+
 .footer .app{ 
     position: absolute;
     left:65%;  
 }
+
 .footer .copyright p{ 
     margin-top: 40px;
     font-size: 11px;
     line-height: 18px;
-    color:#444b57;
+    color:#a4a7ac;
+    padding-bottom: 27px
 }
+
 .footer .copyright a{ 
     margin-top: 40px;
     font-size: 11px;
     line-height: 18px;
     text-decoration: underline;
-    color:#444b57;
+    color:#a4a7ac;
 }
+
+
 .owl-carousel .banner {
-    position:relative;
-    top: -350px;
-    left: 140px;
+    position:absolute;
+    top: 35%;
+    left: 25%;
     text-decoration: none;
     color:black;
 }
-.owl-carousel .banner h2{
+
+.owl-carousel .banner h1{
     position:relative;
-    font-size:50px;
+    font-size:40px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
+
 .owl-carousel .item .banner2 a{
-    position: relative;
-    top:-220px;
-    left: -320px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
     text-decoration: none;
     color:black;
     font-weight:bold;
     font-size:20px;
 }
+
 .owl-carousel .banner3 {
-    position:relative;
-    top: -545px;
-    left: 40%;
+    position: absolute;
+    top: 29%;
+    left: 44%;
     color:white;
     text-decoration: none;
 }
+
 .owl-carousel .banner3 .bannerg{
     position: relative;
     top:10;
     left: -140px;
     color:#a7d6cb;
 }
+
 .owl-carousel .banner3 .bannerp{
     position: relative;
     top: 0px;
     left: 30px;
     color:#facab2;
 }
+
 .owl-carousel .banner3 h2{
     position:relative;
     font-size: 70px;
     font-weight:700;
+    line-height: 62px;
 }
