@@ -13,7 +13,10 @@ body {
     background-position: 99% 99%;
     background-attachment: fixed;
 }
-
+a:hover{
+    color:#838080;
+ }
+ 
 .triangle {
     width: 0px;
     height: 0px;
@@ -32,19 +35,24 @@ ul {
 .lside {
     font-size: 11px;
     margin-top: 8%;
-    margin-left: -4%;
+    margin-left: -5%;
     margin-bottom: 1%;
     line-height: 20px;
 }
 
+.lside a {
+    text-decoration: none;
+}
+
 .rside li a {
     margin-right: 3px;
-    margin-left: 13px;
+    margin-left: 15px;
+    text-decoration: none;
 }
 
 .rside {
-    left: 67%;
-    top: 4.1%;
+    left: 65%;
+    top: 5.1%;
     font-size: 11px;
     position: absolute;
     font-weight: 530;
@@ -54,6 +62,7 @@ ul {
     margin-left: 32%;
     margin-top: 35px;
     align-self: flex-start;
+    cursor: pointer;
 }
 
 #login {
@@ -164,8 +173,22 @@ ul {
     height: 5px;
 }
 
-.dropdown {
-    position: static;
+.pointer a {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    font-size: 12px;
+    text-transform: none;
+    
+}
+
+.pointer a:hover {
+    color:#838080;
+    
+}
+
+.dropdown a:hover{
+    color:#838080;
 }
 
 .dropdown-menu {
@@ -179,7 +202,7 @@ ul {
     border-radius: 4px;
 }
 
-.cmenu .dropdown .dropdown-menu .box .menu-table {
+.cmenu .dropdown .menu-table {
     padding: 30px;
     background-color: #f4f4f4;
     border-radius: 5px;
@@ -187,9 +210,10 @@ ul {
     font-size: 12px;
     font-weight: normal;
     line-height: 20px;
+    cursor: default;
 }
 
-.cmenu .dropdown .dropdown-menu .box .menu-table table td h3 {
+.cmenu .dropdown h3 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #909097;
@@ -198,20 +222,23 @@ ul {
     font-weight: 500;
 }
 
-.cmenu .dropdown .dropdown-menu .box .menu-table table td {
+.cmenu .dropdown table td {
     padding: 0 10px;
     vertical-align: top;
 }
 
-.cmenu .dropdown .dropdown-menu .box .menu-table table td li {
+.cmenu .dropdown  table td li {
     padding-bottom: 10px;
 }
 
-.cmenu .dropdown .dropdown-menu .box .menu-table table td li a {
+.cmenu .dropdown table td li a {
     text-transform: none;
     text-decoration: none;
     color: black;
     display: block;
+}
+.cmenu .dropdown table td li a:hover {
+    color:#838080;
 }
 
 .container .mid {
@@ -251,11 +278,6 @@ a {
 
 a.readextra {
     text-decoration: none;
-}
-
-a.readextra:hover {
-    text-decoration: none;
-    color: #909097;
 }
 
 .spacer {
