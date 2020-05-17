@@ -227,17 +227,17 @@ ul {
     vertical-align: top;
 }
 
-.cmenu .dropdown  table td li {
+.cmenu .dropdown li {
     padding-bottom: 10px;
 }
 
-.cmenu .dropdown table td li a {
+.cmenu .dropdown li a {
     text-transform: none;
     text-decoration: none;
     color: black;
     display: block;
 }
-.cmenu .dropdown table td li a:hover {
+.cmenu .dropdown li a:hover {
     color:#838080;
 }
 

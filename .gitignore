@@ -2,4 +2,7 @@
 package-lock
 *.png
 /test/*
-/assets/*
+/assets/vendors
+/assets/js
+/assets/owlcarousel
+/assets/css
